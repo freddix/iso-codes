@@ -1,19 +1,16 @@
 Summary:	List of country and language names
 Name:		iso-codes
-Version:	3.38
+Version:	3.39
 Release:	1
 License:	LGPL
 Group:		Applications/Text
-Source0:	ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/%{name}-%{version}.tar.xz
-# Source0-md5:	4e5620cc9e64b64ebcce0a00e22a22f7
+Source0:	http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.xz
+# Source0-md5:	e46104db588f56e56cc6954df162bc9b
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	python-PyXML
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noarchpkgconfigdir	%{_datadir}/pkgconfig
 
 %description
 This package aims to provide the list of the country and language (and
@@ -46,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
 %{_datadir}/xml/iso-codes
-%{_noarchpkgconfigdir}/iso-codes.pc
+%{_npkgconfigdir}/iso-codes.pc
 
