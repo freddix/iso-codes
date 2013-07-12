@@ -1,11 +1,11 @@
 Summary:	List of country and language names
 Name:		iso-codes
-Version:	3.42
+Version:	3.44
 Release:	1
 License:	LGPL
 Group:		Applications/Text
 Source0:	http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.xz
-# Source0-md5:	35c6089108410dcfe03b420b57af0dde
+# Source0-md5:	be772ec57321b92e62d962def26ce2aa
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
