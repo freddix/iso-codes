@@ -1,11 +1,11 @@
 Summary:	List of country and language names
 Name:		iso-codes
-Version:	3.48
-Release:	1
+Version:	3.49
+Release:	2
 License:	LGPL
 Group:		Applications/Text
 Source0:	http://ftp.debian.org/debian/pool/main/i/iso-codes/%{name}_%{version}.orig.tar.xz
-# Source0-md5:	6488463aae295c5461f9483fe301c18f
+# Source0-md5:	a0708a81f42c538f4670e3bf3d343dd8
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -rf $RPM_BUILD_ROOT%{_datadir}/locale/{crh,dv,haw,kok,no,pa_IN,ps,syr,wo}
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{haw,kok,tt@iqtelif}
 
 %find_lang %{name} --all-name
 
